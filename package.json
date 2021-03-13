@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "trading-view-recommends-parser-nodejs",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "Trading view trading recommends parse- NodeJS",
   "engines": {
     "node": ">= 14.16 <15"
   },
@@ -29,8 +29,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <github@jakubsynowiec.info>",
-  "license": "Apache-2.0",
+  "author": "Evgeniy Ryumin <cmp08@ya.ru>",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "tslib": "~2.1.0"
