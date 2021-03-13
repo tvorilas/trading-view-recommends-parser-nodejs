@@ -1,5 +1,9 @@
 # Trading view stats parser
 
+Written on NodeJS with typescript
+
+This package is fully compatible with original python lib: [deathlyface/python-tradingview-ta](https://github.com/deathlyface/python-tradingview-ta).
+
 ## Install
 
 ```
