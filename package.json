@@ -1,7 +1,7 @@
 {
   "name": "trading-view-recommends-parser-nodejs",
   "version": "0.0.0",
-  "description": "Trading view trading recommends parse- NodeJS",
+  "description": "Trading view trading recommends parse - NodeJS",
   "engines": {
     "node": ">= 14.16 <15"
   },
