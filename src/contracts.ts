@@ -83,6 +83,8 @@ export const REQUEST_INDICATORS = [
   'Pivot.M.Demark.R1{}',
   'open{}',
   'P.SAR{}',
+  'volume',
+  'change',
 ];
 
 export enum EXCHANGES_ENUM {
