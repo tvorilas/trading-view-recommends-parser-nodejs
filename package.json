@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Trading view trading recommends parse - NodeJS",
   "engines": {
-    "node": ">= 14.16 <15"
+    "node": ">= 14.16"
   },
   "main": "build/src/index.js",
   "devDependencies": {
