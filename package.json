@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Trading view trading recommends parse - NodeJS",
   "engines": {
-    "node": ">= 14.16 <15"
+    "node": ">= 14.16"
   },
   "main": "build/src/index.js",
   "devDependencies": {
@@ -32,7 +32,8 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "tsc -p tsconfig.release.json"
   },
   "author": "Evgeniy Ryumin <cmp08@ya.ru>",
   "license": "MIT",

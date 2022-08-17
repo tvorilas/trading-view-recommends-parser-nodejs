@@ -1,7 +1,5 @@
 import {
   REQUEST_INDICATORS,
-  EXCHANGES_ENUM,
-  SCREENERS_ENUM,
   INTERVALS_ENUM,
   INTERVALS_SCHEMA,
 } from './contracts';
@@ -19,8 +17,8 @@ function getData(symbol: string, interval: INTERVALS_ENUM) {
 
 export class TradingViewScan {
   constructor(
-    public screener: SCREENERS_ENUM,
-    public exchange: EXCHANGES_ENUM,
+    public screener: string,
+    public exchange: string,
     public symbol: string,
     public interval: INTERVALS_ENUM,
     private axiosInstance: typeof Axios = Axios,
@@ -57,18 +55,9 @@ export class TradingViewScan {
     }
   }
   public async validateExchange() {
-    if (Object.values(EXCHANGES_ENUM).indexOf(this.exchange) === -1) {
-      throw new Error(`Exchange "${this.exchange}" is not valid`);
-    }
   }
   public async validateScreener() {
-    if (Object.values(SCREENERS_ENUM).indexOf(this.screener) === -1) {
-      throw new Error(`Screener "${this.screener}" is not valid`);
-    }
   }
   public async validateSymbol() {
-    if (typeof this.symbol !== 'string') {
-      throw new Error(`Symbol "${this.symbol}" is not valid`);
-    }
   }
 }
